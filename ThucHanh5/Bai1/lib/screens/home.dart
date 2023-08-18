@@ -51,52 +51,59 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            // group1000003474o2Z (1:401)
-                            width: 92*fem,
+                            width: 92 * fem,
                             height: double.infinity,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  // hiandyvss (1:402)
-                                  'Hi, Andy',
-                                  style: SafeGoogleFont (
-                                    'Plus Jakarta Sans',
-                                    fontSize: 18*ffem,
-                                    fontWeight: FontWeight.w700,
-                                    height: 1.4444444444*ffem/fem,
-                                    letterSpacing: 0.09*fem,
-                                    color: const Color(0xff111111),
+                                RichText(
+                                  text: TextSpan(
+                                    style: SafeGoogleFont(
+                                      'Plus Jakarta Sans',
+                                      fontSize: 18 * ffem,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.4444444444 * ffem / fem,
+                                      letterSpacing: 0.09 * fem,
+                                      color: const Color(0xff111111),
+                                    ),
+                                    children: [
+                                      TextSpan(
+                                        text: 'Hi, Andy',
+                                      ),
+                                    ],
                                   ),
                                 ),
                                 Container(
-                                  // group1000003473FfF (1:403)
-                                  padding: EdgeInsets.fromLTRB(2.67*fem, 0*fem, 0*fem, 0*fem),
+                                  padding: EdgeInsets.fromLTRB(2.67 * fem, 0 * fem, 0 * fem, 0 * fem),
                                   width: double.infinity,
                                   child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Container(
-                                        // bxsmap11xZf (1:405)
-                                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.67*fem, 0*fem),
-                                        width: 10.67*fem,
-                                        height: 13.33*fem,
+                                        margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 6.67 * fem, 0 * fem),
+                                        width: 10.67 * fem,
+                                        height: 13.33 * fem,
                                         child: Image.asset(
                                           'assets/screens/images/bxs-map-1-1-9cu.png',
-                                          width: 10.67*fem,
-                                          height: 13.33*fem,
+                                          width: 10.67 * fem,
+                                          height: 13.33 * fem,
                                         ),
                                       ),
-                                      Text(
-                                        // netherlandsruw (1:404)
-                                        'Netherlands',
-                                        style: SafeGoogleFont (
-                                          'Plus Jakarta Sans',
-                                          fontSize: 12*ffem,
-                                          fontWeight: FontWeight.w500,
-                                          height: 1.6666666667*ffem/fem,
-                                          letterSpacing: 0.06*fem,
-                                          color: const Color(0xff78828a),
+                                      RichText(
+                                        text: TextSpan(
+                                          style: SafeGoogleFont(
+                                            'Plus Jakarta Sans',
+                                            fontSize: 12 * ffem,
+                                            fontWeight: FontWeight.w500,
+                                            height: 1.6666666667 * ffem / fem,
+                                            letterSpacing: 0.06 * fem,
+                                            color: const Color(0xff78828a),
+                                          ),
+                                          children: [
+                                            TextSpan(
+                                              text: 'Netherlands',
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ],
@@ -157,17 +164,22 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        // smalllabelregular12pxdSq (I1:361;23:253;23:197)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 172*fem, 0*fem),
-                        child: Text(
-                          'Search...',
-                          style: SafeGoogleFont (
-                            'Plus Jakarta Sans',
-                            fontSize: 16*ffem,
-                            fontWeight: FontWeight.w500,
-                            height: 1.5*ffem/fem,
-                            letterSpacing: 0.08*fem,
-                            color: const Color(0xff9ca4ab),
+                        margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 172 * fem, 0 * fem),
+                        child: RichText(
+                          text: TextSpan(
+                            style: SafeGoogleFont(
+                              'Plus Jakarta Sans',
+                              fontSize: 16 * ffem,
+                              fontWeight: FontWeight.w500,
+                              height: 1.5 * ffem / fem,
+                              letterSpacing: 0.08 * fem,
+                              color: const Color(0xff9ca4ab),
+                            ),
+                            children: [
+                              TextSpan(
+                                text: 'Search...',
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -226,18 +238,23 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // airportjXo (1:381)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
-                            child: Text(
-                              'Airport',
+                            margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 0 * fem),
+                            child: RichText(
                               textAlign: TextAlign.center,
-                              style: SafeGoogleFont (
-                                'Plus Jakarta Sans',
-                                fontSize: 14*ffem,
-                                fontWeight: FontWeight.w500,
-                                height: 1.5714285714*ffem/fem,
-                                letterSpacing: 0.07*fem,
-                                color: const Color(0xff78828a),
+                              text: TextSpan(
+                                style: SafeGoogleFont(
+                                  'Plus Jakarta Sans',
+                                  fontSize: 14 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.5714285714 * ffem / fem,
+                                  letterSpacing: 0.07 * fem,
+                                  color: const Color(0xff78828a),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'Airport',
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -274,18 +291,23 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // taxiSad (1:377)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
-                            child: Text(
-                              'Taxi',
+                            margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 0 * fem),
+                            child: RichText(
                               textAlign: TextAlign.center,
-                              style: SafeGoogleFont (
-                                'Plus Jakarta Sans',
-                                fontSize: 14*ffem,
-                                fontWeight: FontWeight.w500,
-                                height: 1.5714285714*ffem/fem,
-                                letterSpacing: 0.07*fem,
-                                color: const Color(0xff78828a),
+                              text: TextSpan(
+                                style: SafeGoogleFont(
+                                  'Plus Jakarta Sans',
+                                  fontSize: 14 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.5714285714 * ffem / fem,
+                                  letterSpacing: 0.07 * fem,
+                                  color: const Color(0xff78828a),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'Taxi',
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -322,18 +344,23 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // hotelwA1 (1:373)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
-                            child: Text(
-                              'Hotel',
+                            margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 0 * fem),
+                            child: RichText(
                               textAlign: TextAlign.center,
-                              style: SafeGoogleFont (
-                                'Plus Jakarta Sans',
-                                fontSize: 14*ffem,
-                                fontWeight: FontWeight.w500,
-                                height: 1.5714285714*ffem/fem,
-                                letterSpacing: 0.07*fem,
-                                color: const Color(0xff78828a),
+                              text: TextSpan(
+                                style: SafeGoogleFont(
+                                  'Plus Jakarta Sans',
+                                  fontSize: 14 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.5714285714 * ffem / fem,
+                                  letterSpacing: 0.07 * fem,
+                                  color: const Color(0xff78828a),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'Hotel',
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -369,18 +396,23 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // moreDmj (1:370)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
-                            child: Text(
-                              'More',
+                            margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 1 * fem, 0 * fem),
+                            child: RichText(
                               textAlign: TextAlign.center,
-                              style: SafeGoogleFont (
-                                'Plus Jakarta Sans',
-                                fontSize: 12*ffem,
-                                fontWeight: FontWeight.w600,
-                                height: 1.6666666667*ffem/fem,
-                                letterSpacing: 0.06*fem,
-                                color: const Color(0xff78828a),
+                              text: TextSpan(
+                                style: SafeGoogleFont(
+                                  'Plus Jakarta Sans',
+                                  fontSize: 12 * ffem,
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.6666666667 * ffem / fem,
+                                  letterSpacing: 0.06 * fem,
+                                  color: const Color(0xff78828a),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'More',
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -409,18 +441,23 @@ class Home extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            // frequentlyvisitedBry (1:446)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 111.5*fem, 0*fem),
-                            child: Text(
-                              'Frequently visited\n',
+                            margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 111.5 * fem, 0 * fem),
+                            child: RichText(
                               textAlign: TextAlign.center,
-                              style: SafeGoogleFont (
-                                'Plus Jakarta Sans',
-                                fontSize: 18*ffem,
-                                fontWeight: FontWeight.w700,
-                                height: 1.4444444444*ffem/fem,
-                                letterSpacing: 0.09*fem,
-                                color: const Color(0xff111111),
+                              text: TextSpan(
+                                style: SafeGoogleFont(
+                                  'Plus Jakarta Sans',
+                                  fontSize: 18 * ffem,
+                                  fontWeight: FontWeight.w700,
+                                  height: 1.4444444444 * ffem / fem,
+                                  letterSpacing: 0.09 * fem,
+                                  color: const Color(0xff111111),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'Frequently visited\n',
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -531,17 +568,22 @@ class Home extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              // tahitibeachn9w (1:417)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
-                                              child: Text(
-                                                'Tahiti Beach',
-                                                style: SafeGoogleFont (
-                                                  'Plus Jakarta Sans',
-                                                  fontSize: 14*ffem,
-                                                  fontWeight: FontWeight.w600,
-                                                  height: 1.5714285714*ffem/fem,
-                                                  letterSpacing: 0.07*fem,
-                                                  color: const Color(0xff111111),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 4 * fem),
+                                              child: RichText(
+                                                text: TextSpan(
+                                                  style: SafeGoogleFont(
+                                                    'Plus Jakarta Sans',
+                                                    fontSize: 14 * ffem,
+                                                    fontWeight: FontWeight.w600,
+                                                    height: 1.5714285714 * ffem / fem,
+                                                    letterSpacing: 0.07 * fem,
+                                                    color: const Color(0xff111111),
+                                                  ),
+                                                  children: [
+                                                    TextSpan(
+                                                      text: 'Tahiti Beach',
+                                                    ),
+                                                  ],
                                                 ),
                                               ),
                                             ),
@@ -617,17 +659,22 @@ class Home extends StatelessWidget {
                                             Container(width: 10),
                                             Expanded(
                                               child: Container(
-                                                // UU1 (1:423)
-                                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 57*fem, 0*fem),
-                                                child: Text(
-                                                  '\$235',
-                                                  style: SafeGoogleFont (
-                                                    'Plus Jakarta Sans',
-                                                    fontSize: 14*ffem,
-                                                    fontWeight: FontWeight.w700,
-                                                    height: 1.5714285714*ffem/fem,
-                                                    letterSpacing: 0.07*fem,
-                                                    color: const Color(0xff111111),
+                                                margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 57 * fem, 0 * fem),
+                                                child: RichText(
+                                                  text: TextSpan(
+                                                    style: SafeGoogleFont(
+                                                      'Plus Jakarta Sans',
+                                                      fontSize: 14 * ffem,
+                                                      fontWeight: FontWeight.w700,
+                                                      height: 1.5714285714 * ffem / fem,
+                                                      letterSpacing: 0.07 * fem,
+                                                      color: const Color(0xff111111),
+                                                    ),
+                                                    children: [
+                                                      TextSpan(
+                                                        text: '\$235',
+                                                      ),
+                                                    ],
                                                   ),
                                                 ),
                                               ),
@@ -744,49 +791,57 @@ class Home extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              // stluciamountain1Xo (1:435)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
-                                              child: Text(
-                                                'St. Lucia Mountain',
-                                                style: SafeGoogleFont (
-                                                  'Plus Jakarta Sans',
-                                                  fontSize: 14*ffem,
-                                                  fontWeight: FontWeight.w600,
-                                                  height: 1.5714285714*ffem/fem,
-                                                  letterSpacing: 0.07*fem,
-                                                  color: const Color(0xff111111),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 4 * fem),
+                                              child: RichText(
+                                                text: TextSpan(
+                                                  style: SafeGoogleFont(
+                                                    'Plus Jakarta Sans',
+                                                    fontSize: 14 * ffem,
+                                                    fontWeight: FontWeight.w600,
+                                                    height: 1.5714285714 * ffem / fem,
+                                                    letterSpacing: 0.07 * fem,
+                                                    color: const Color(0xff111111),
+                                                  ),
+                                                  children: [
+                                                    TextSpan(
+                                                      text: 'St. Lucia Mountain',
+                                                    ),
+                                                  ],
                                                 ),
                                               ),
                                             ),
                                             Container(
-                                              // group10000034656p9 (1:436)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 36*fem, 0*fem),
-                                              padding: EdgeInsets.fromLTRB(2.33*fem, 0*fem, 0*fem, 0*fem),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 36 * fem, 0 * fem),
+                                              padding: EdgeInsets.fromLTRB(2.33 * fem, 0 * fem, 0 * fem, 0 * fem),
                                               width: double.infinity,
                                               child: Row(
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
-                                                    // bxsmap11oyT (1:438)
-                                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.33*fem, 0*fem),
-                                                    width: 9.33*fem,
-                                                    height: 11.67*fem,
+                                                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 6.33 * fem, 0 * fem),
+                                                    width: 9.33 * fem,
+                                                    height: 11.67 * fem,
                                                     child: Image.asset(
                                                       'assets/screens/images/bxs-map-1-1-tvD.png',
-                                                      width: 9.33*fem,
-                                                      height: 11.67*fem,
+                                                      width: 9.33 * fem,
+                                                      height: 11.67 * fem,
                                                     ),
                                                   ),
-                                                  Text(
-                                                    // southamericaKB7 (1:437)
-                                                    'South America',
-                                                    style: SafeGoogleFont (
-                                                      'Plus Jakarta Sans',
-                                                      fontSize: 10*ffem,
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 1.8*ffem/fem,
-                                                      letterSpacing: 0.05*fem,
-                                                      color: const Color(0xff78828a),
+                                                  RichText(
+                                                    text: TextSpan(
+                                                      style: SafeGoogleFont(
+                                                        'Plus Jakarta Sans',
+                                                        fontSize: 10 * ffem,
+                                                        fontWeight: FontWeight.w500,
+                                                        height: 1.8 * ffem / fem,
+                                                        letterSpacing: 0.05 * fem,
+                                                        color: const Color(0xff78828a),
+                                                      ),
+                                                      children: [
+                                                        TextSpan(
+                                                          text: 'South America',
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
                                                 ],
@@ -804,17 +859,22 @@ class Home extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.center,
                                           children: [
                                             Container(
-                                              // tdX (1:441)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 59*fem, 0*fem),
-                                              child: Text(
-                                                '\$182',
-                                                style: SafeGoogleFont (
-                                                  'Plus Jakarta Sans',
-                                                  fontSize: 14*ffem,
-                                                  fontWeight: FontWeight.w700,
-                                                  height: 1.5714285714*ffem/fem,
-                                                  letterSpacing: 0.07*fem,
-                                                  color: const Color(0xff111111),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 59 * fem, 0 * fem),
+                                              child: RichText(
+                                                text: TextSpan(
+                                                  style: SafeGoogleFont(
+                                                    'Plus Jakarta Sans',
+                                                    fontSize: 14 * ffem,
+                                                    fontWeight: FontWeight.w700,
+                                                    height: 1.5714285714 * ffem / fem,
+                                                    letterSpacing: 0.07 * fem,
+                                                    color: const Color(0xff111111),
+                                                  ),
+                                                  children: [
+                                                    TextSpan(
+                                                      text: '\$182',
+                                                    ),
+                                                  ],
                                                 ),
                                               ),
                                             ),
@@ -894,36 +954,45 @@ class Home extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(
-                      // titletYy (1:497)
                       width: double.infinity,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            // onbudgettour3gm (1:499)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 144*fem, 0*fem),
-                            child: Text(
-                              'On Budget Tour',
-                              style: SafeGoogleFont (
-                                'Plus Jakarta Sans',
-                                fontSize: 18*ffem,
-                                fontWeight: FontWeight.w700,
-                                height: 1.4444444444*ffem/fem,
-                                letterSpacing: 0.09*fem,
-                                color: const Color(0xff111111),
+                            margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 144 * fem, 0 * fem),
+                            child: RichText(
+                              text: TextSpan(
+                                style: SafeGoogleFont(
+                                  'Plus Jakarta Sans',
+                                  fontSize: 18 * ffem,
+                                  fontWeight: FontWeight.w700,
+                                  height: 1.4444444444 * ffem / fem,
+                                  letterSpacing: 0.09 * fem,
+                                  color: const Color(0xff111111),
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'On Budget Tour',
+                                  ),
+                                ],
                               ),
                             ),
                           ),
-                          Text(
-                            // seeallAFb (1:498)
-                            'See All',
-                            style: SafeGoogleFont (
-                              'Plus Jakarta Sans',
-                              fontSize: 14*ffem,
-                              fontWeight: FontWeight.w500,
-                              height: 1.5714285714*ffem/fem,
-                              letterSpacing: 0.07*fem,
-                              color: const Color(0xff009b8d),
+                          RichText(
+                            text: TextSpan(
+                              style: SafeGoogleFont(
+                                'Plus Jakarta Sans',
+                                fontSize: 14 * ffem,
+                                fontWeight: FontWeight.w500,
+                                height: 1.5714285714 * ffem / fem,
+                                letterSpacing: 0.07 * fem,
+                                color: const Color(0xff009b8d),
+                              ),
+                              children: [
+                                TextSpan(
+                                  text: 'See All',
+                                ),
+                              ],
                             ),
                           ),
                         ],
@@ -975,68 +1044,80 @@ class Home extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              // group1000003483NFB (1:507)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 12*fem),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 12 * fem),
                                               width: double.infinity,
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
-                                                  Text(
-                                                    // ledadubeachWMP (1:508)
-                                                    'Ledadu Beach',
-                                                    style: SafeGoogleFont (
-                                                      'Plus Jakarta Sans',
-                                                      fontSize: 16*ffem,
-                                                      fontWeight: FontWeight.w700,
-                                                      height: 1.5*ffem/fem,
-                                                      letterSpacing: 0.08*fem,
-                                                      color: const Color(0xff111111),
+                                                  RichText(
+                                                    text: TextSpan(
+                                                      style: SafeGoogleFont(
+                                                        'Plus Jakarta Sans',
+                                                        fontSize: 16 * ffem,
+                                                        fontWeight: FontWeight.w700,
+                                                        height: 1.5 * ffem / fem,
+                                                        letterSpacing: 0.08 * fem,
+                                                        color: const Color(0xff111111),
+                                                      ),
+                                                      children: [
+                                                        TextSpan(
+                                                          text: 'Ledadu Beach',
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
-                                                  Text(
-                                                    // days2nightsrAM (1:509)
-                                                    '3 days 2 nights',
-                                                    style: SafeGoogleFont (
-                                                      'Plus Jakarta Sans',
-                                                      fontSize: 12*ffem,
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 1.6666666667*ffem/fem,
-                                                      letterSpacing: 0.06*fem,
-                                                      color: const Color(0xff78828a),
+                                                  RichText(
+                                                    text: TextSpan(
+                                                      style: SafeGoogleFont(
+                                                        'Plus Jakarta Sans',
+                                                        fontSize: 12 * ffem,
+                                                        fontWeight: FontWeight.w500,
+                                                        height: 1.6666666667 * ffem / fem,
+                                                        letterSpacing: 0.06 * fem,
+                                                        color: const Color(0xff78828a),
+                                                      ),
+                                                      children: [
+                                                        TextSpan(
+                                                          text: '3 days 2 nights',
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
                                                 ],
                                               ),
                                             ),
                                             Container(
-                                              // group1000003465nZo (1:503)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 39*fem, 0*fem),
-                                              padding: EdgeInsets.fromLTRB(3*fem, 0*fem, 0*fem, 0*fem),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 39 * fem, 0 * fem),
+                                              padding: EdgeInsets.fromLTRB(3 * fem, 0 * fem, 0 * fem, 0 * fem),
                                               width: double.infinity,
                                               child: Row(
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
-                                                    // bxsmap11Jo3 (1:505)
-                                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7*fem, 0*fem),
-                                                    width: 12*fem,
-                                                    height: 15*fem,
+                                                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 7 * fem, 0 * fem),
+                                                    width: 12 * fem,
+                                                    height: 15 * fem,
                                                     child: Image.asset(
                                                       'assets/screens/images/bxs-map-1-1-v4R.png',
-                                                      width: 12*fem,
-                                                      height: 15*fem,
+                                                      width: 12 * fem,
+                                                      height: 15 * fem,
                                                     ),
                                                   ),
-                                                  Text(
-                                                    // australiaCtR (1:504)
-                                                    'Australia',
-                                                    style: SafeGoogleFont (
-                                                      'Plus Jakarta Sans',
-                                                      fontSize: 12*ffem,
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 1.6666666667*ffem/fem,
-                                                      letterSpacing: 0.06*fem,
-                                                      color: const Color(0xff78828a),
+                                                  RichText(
+                                                    text: TextSpan(
+                                                      style: SafeGoogleFont(
+                                                        'Plus Jakarta Sans',
+                                                        fontSize: 12 * ffem,
+                                                        fontWeight: FontWeight.w500,
+                                                        height: 1.6666666667 * ffem / fem,
+                                                        letterSpacing: 0.06 * fem,
+                                                        color: const Color(0xff78828a),
+                                                      ),
+                                                      children: [
+                                                        TextSpan(
+                                                          text: 'Australia',
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
                                                 ],
@@ -1127,68 +1208,80 @@ class Home extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              // group1000003483hVj (1:518)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 12*fem),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 12 * fem),
                                               width: double.infinity,
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
-                                                  Text(
-                                                    // endigadabeachSTK (1:519)
-                                                    'Endigada Beach',
-                                                    style: SafeGoogleFont (
-                                                      'Plus Jakarta Sans',
-                                                      fontSize: 16*ffem,
-                                                      fontWeight: FontWeight.w700,
-                                                      height: 1.5*ffem/fem,
-                                                      letterSpacing: 0.08*fem,
-                                                      color: const Color(0xff111111),
+                                                  RichText(
+                                                    text: TextSpan(
+                                                      style: SafeGoogleFont(
+                                                        'Plus Jakarta Sans',
+                                                        fontSize: 16 * ffem,
+                                                        fontWeight: FontWeight.w700,
+                                                        height: 1.5 * ffem / fem,
+                                                        letterSpacing: 0.08 * fem,
+                                                        color: const Color(0xff111111),
+                                                      ),
+                                                      children: [
+                                                        TextSpan(
+                                                          text: 'Endigada Beach',
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
-                                                  Text(
-                                                    // days4nightsn1P (1:520)
-                                                    '5 days 4 nights',
-                                                    style: SafeGoogleFont (
-                                                      'Plus Jakarta Sans',
-                                                      fontSize: 12*ffem,
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 1.6666666667*ffem/fem,
-                                                      letterSpacing: 0.06*fem,
-                                                      color: const Color(0xff78828a),
+                                                  RichText(
+                                                    text: TextSpan(
+                                                      style: SafeGoogleFont(
+                                                        'Plus Jakarta Sans',
+                                                        fontSize: 12 * ffem,
+                                                        fontWeight: FontWeight.w500,
+                                                        height: 1.6666666667 * ffem / fem,
+                                                        letterSpacing: 0.06 * fem,
+                                                        color: const Color(0xff78828a),
+                                                      ),
+                                                      children: [
+                                                        TextSpan(
+                                                          text: '5 days 4 nights',
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
                                                 ],
                                               ),
                                             ),
                                             Container(
-                                              // group1000003465KX7 (1:514)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 54*fem, 0*fem),
-                                              padding: EdgeInsets.fromLTRB(3*fem, 0*fem, 0*fem, 0*fem),
+                                              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 54 * fem, 0 * fem),
+                                              padding: EdgeInsets.fromLTRB(3 * fem, 0 * fem, 0 * fem, 0 * fem),
                                               width: double.infinity,
                                               child: Row(
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
-                                                    // bxsmap11r1F (1:516)
-                                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7*fem, 0*fem),
-                                                    width: 12*fem,
-                                                    height: 15*fem,
+                                                    margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 7 * fem, 0 * fem),
+                                                    width: 12 * fem,
+                                                    height: 15 * fem,
                                                     child: Image.asset(
                                                       'assets/screens/images/bxs-map-1-1-kEV.png',
-                                                      width: 12*fem,
-                                                      height: 15*fem,
+                                                      width: 12 * fem,
+                                                      height: 15 * fem,
                                                     ),
                                                   ),
-                                                  Text(
-                                                    // australiayLm (1:515)
-                                                    'Australia',
-                                                    style: SafeGoogleFont (
-                                                      'Plus Jakarta Sans',
-                                                      fontSize: 12*ffem,
-                                                      fontWeight: FontWeight.w500,
-                                                      height: 1.6666666667*ffem/fem,
-                                                      letterSpacing: 0.06*fem,
-                                                      color: const Color(0xff78828a),
+                                                  RichText(
+                                                    text: TextSpan(
+                                                      style: SafeGoogleFont(
+                                                        'Plus Jakarta Sans',
+                                                        fontSize: 12 * ffem,
+                                                        fontWeight: FontWeight.w500,
+                                                        height: 1.6666666667 * ffem / fem,
+                                                        letterSpacing: 0.06 * fem,
+                                                        color: const Color(0xff78828a),
+                                                      ),
+                                                      children: [
+                                                        TextSpan(
+                                                          text: 'Australia',
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
                                                 ],
