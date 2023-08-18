@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'sign_in_form.dart';
 
-void showCustomDialog(BuildContext context, {required ValueChanged onValue}) {
+void showCustomDialog(BuildContext context, {required ValueChanged<dynamic> onValue}) {
   showGeneralDialog(
     context: context,
     barrierLabel: "Barrier",
@@ -13,7 +13,7 @@ void showCustomDialog(BuildContext context, {required ValueChanged onValue}) {
     pageBuilder: (_, __, ___) {
       return Center(
         child: Container(
-          height: 620,
+          height: 500, // Adjust the height as needed
           margin: const EdgeInsets.symmetric(horizontal: 16),
           padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
           decoration: BoxDecoration(
@@ -34,131 +34,103 @@ void showCustomDialog(BuildContext context, {required ValueChanged onValue}) {
           ),
           child: Scaffold(
             backgroundColor: Colors.transparent,
-            body: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Column(
-                  children: [
-                    const Text(
-                      "Sign in",
-                      style: TextStyle(
-                        fontSize: 34,
-                        fontFamily: "Poppins",
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 16),
-                      child: Text(
-                        "Access to 240+ hours of content. Learn design and code, by building real apps with Flutter and Swift.",
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    const Expanded(
-                      child: SingleChildScrollView(
-                        child: SignInForm(),
-                      ),
-                    ),
-                    const Row(
-                      children: [
-                        Expanded(
-                          child: Divider(),
+            body: SingleChildScrollView( // Wrap content in SingleChildScrollView
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Column(
+                    children: [
+                      const Text(
+                        "Sign in",
+                        style: TextStyle(
+                          fontSize: 34,
+                          fontFamily: "Poppins",
+                          fontWeight: FontWeight.w600,
                         ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: Text(
-                            "OR",
-                            style: TextStyle(
-                              color: Colors.black26,
-                              fontWeight: FontWeight.w500,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 16),
+                        child: Text(
+                          "Access to 240+ hours of content. Learn design and code, by building real apps with Flutter and Swift.",
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      SignInForm(),
+                      const Divider(),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 24),
+                        child: Text(
+                          "Sign up with Email, Apple or Google",
+                          style: TextStyle(color: Colors.black54),
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            padding: EdgeInsets.zero,
+                            icon: SvgPicture.asset(
+                              "assets/icons/email_box.svg",
+                              height: 64,
+                              width: 64,
                             ),
                           ),
+                          IconButton(
+                            onPressed: () {},
+                            padding: EdgeInsets.zero,
+                            icon: SvgPicture.asset(
+                              "assets/icons/apple_box.svg",
+                              height: 64,
+                              width: 64,
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            padding: EdgeInsets.zero,
+                            icon: SvgPicture.asset(
+                              "assets/icons/google_box.svg",
+                              height: 64,
+                              width: 64,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: -48,
+                    child: CircleAvatar(
+                      radius: 16,
+                      backgroundColor: Colors.white,
+                      child: IconButton(
+                        onPressed: () {
+                          Navigator.of(context).pop(); // Close the dialog
+                        },
+                        icon: Icon(
+                          Icons.close,
+                          size: 20,
+                          color: Colors.black,
                         ),
-                        Expanded(
-                          child: Divider(),
-                        ),
-                      ],
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 24),
-                      child: Text(
-                        "Sign up with Email, Apple or Google",
-                        style: TextStyle(color: Colors.black54),
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        IconButton(
-                          onPressed: () {},
-                          padding: EdgeInsets.zero,
-                          icon: SvgPicture.asset(
-                            "assets/icons/email_box.svg",
-                            height: 64,
-                            width: 64,
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () {},
-                          padding: EdgeInsets.zero,
-                          icon: SvgPicture.asset(
-                            "assets/icons/apple_box.svg",
-                            height: 64,
-                            width: 64,
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () {},
-                          padding: EdgeInsets.zero,
-                          icon: SvgPicture.asset(
-                            "assets/icons/google_box.svg",
-                            height: 64,
-                            width: 64,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-
-                const Positioned(
-                  left: 0,
-                  right: 0,
-                  bottom: -48,
-                  child: CircleAvatar(
-                    radius: 16,
-                    backgroundColor: Colors.white,
-                    child: Icon(
-                      Icons.close,
-                      size: 20,
-                      color: Colors.black,
-                    ),
                   ),
-                )
-              ],
+                ],
+              ),
             ),
           ),
         ),
       );
     },
     transitionBuilder: (_, anim, __, child) {
-      Tween<Offset> tween;
-      // if (anim.status == AnimationStatus.reverse) {
-      //   tween = Tween(begin: const Offset(0, 1), end: Offset.zero);
-      // } else {
-      //   tween = Tween(begin: const Offset(0, -1), end: Offset.zero);
-      // }
-
-      tween = Tween(begin: const Offset(0, -1), end: Offset.zero);
+      Tween<Offset> tween = Tween(begin: const Offset(0, -1), end: Offset.zero);
 
       return SlideTransition(
         position: tween.animate(
           CurvedAnimation(parent: anim, curve: Curves.easeInOut),
         ),
-        // child: FadeTransition(
-        //   opacity: anim,
-        //   child: child,
-        // ),
         child: child,
       );
     },

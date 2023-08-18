@@ -6,14 +6,14 @@ import 'package:rive/rive.dart';
 import 'components/animated_btn.dart';
 import 'components/sign_in_dialog.dart';
 
-class OnbodingScreen extends StatefulWidget {
-  const OnbodingScreen({super.key});
+class OnboardingScreen extends StatefulWidget {
+  const OnboardingScreen({Key? key}) : super(key: key);
 
   @override
-  State<OnbodingScreen> createState() => _OnbodingScreenState();
+  State<OnboardingScreen> createState() => _OnboardingScreenState();
 }
 
-class _OnbodingScreenState extends State<OnbodingScreen> {
+class _OnboardingScreenState extends State<OnboardingScreen> {
   late RiveAnimationController _btnAnimationController;
 
   bool isShowSignInDialog = false;
@@ -67,20 +67,20 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Spacer(),
-                    const SizedBox(
-                      width: 260,
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.7,
                       child: Column(
                         children: [
                           Text(
                             "Learn design & code",
                             style: TextStyle(
-                              fontSize: 60,
+                              fontSize: 32, // Adjust the font size
                               fontWeight: FontWeight.w700,
                               fontFamily: "Poppins",
                               height: 1.2,
                             ),
                           ),
-                          SizedBox(height: 16),
+                          const SizedBox(height: 16),
                           Text(
                             "Don’t skip design. Learn design and code, by building real apps with Flutter and Swift. Complete courses about the best tools.",
                           ),
@@ -95,7 +95,7 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
 
                         Future.delayed(
                           const Duration(milliseconds: 800),
-                          () {
+                              () {
                             setState(() {
                               isShowSignInDialog = true;
                             });
@@ -126,3 +126,4 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
     );
   }
 }
+
